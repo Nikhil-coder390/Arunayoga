@@ -13,6 +13,11 @@ const quicksand = Quicksand({
 export const metadata: Metadata = {
     title: "Arunayoga Training and Research Institute",
     description: "Transforming lives through authentic yoga since 1990.",
+    icons: {
+        icon: "/favicon.ico",
+        shortcut: "/favicon.ico",
+        apple: "/favicon.ico",
+    },
 };
 
 export default function RootLayout({
