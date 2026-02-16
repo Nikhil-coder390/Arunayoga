@@ -8,62 +8,36 @@ import { CheckCircle } from "lucide-react";
 
 export default function AboutPreview() {
     return (
-        <section className="py-20 overflow-hidden">
+        <section className="py-20 overflow-hidden bg-white">
             <div className="container mx-auto px-4">
-                <div className="flex flex-col lg:flex-row gap-12 items-center">
-                    {/* Left Column: Image */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                        className="w-full lg:w-1/2 relative"
-                    >
-                        <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
-                            <Image
-                                src="/about-founder.png" // Placeholder
-                                alt="Yogini Arunadevi"
-                                fill
-                                className="object-cover"
-                            />
-                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
-                                <blockquote className="text-white italic text-lg font-light">
-                                    &quot;Yoga is not a religion. It is a science. Science of well-being, science of youthfulness, science of integrating body, mind and soul.&quot;
-                                </blockquote>
-                                <p className="text-accent mt-4 font-semibold">— Yoga Guru Arunadevi</p>
-                            </div>
-                        </div>
-                        {/* Decorative Element behind */}
-                        <div className="absolute -z-10 top-10 -left-10 w-full h-full border-2 border-primary/20 rounded-2xl" />
-                    </motion.div>
+                <div className="text-center mb-14">
+                    <h2 className="text-3xl md:text-4xl font-bold font-primary text-text mb-3">
+                        Arunayoga Training and Research Institute
+                    </h2>
+                    <p className="text-2xl md:text-3xl font-primary text-primary">Build. Achieve.</p>
+                </div>
 
-                    {/* Right Column: Content */}
+                <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
                     <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                        className="w-full lg:w-1/2"
+                        transition={{ duration: 0.7 }}
+                        className="order-2 lg:order-1"
                     >
-                        <span className="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">
-                            Meet Our Founder
-                        </span>
-                        <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-primary text-text">
-                            Yogini Arunadevi
-                            <span className="block text-2xl font-light text-gray-500 mt-2">
-                                World-Renowned Yoga Expert
-                            </span>
-                        </h2>
+                        <h3 className="text-2xl lg:text-3xl font-primary font-bold text-text mb-5 leading-snug">
+                            Arunayoga Foundation led by Yoga Guru Arunadevi has trained over 2000 teachers since 1990.
+                        </h3>
                         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                            Led by veteran Yoga Guru Arunadevi with over three decades of experience, wealth of knowledge and wisdom. Rated as one of the top female yoga teachers in the world, she specializes in ancient Vedic yoga techniques to heal and transform lives.
+                            A veteran with over three decades of experience, wealth of knowledge and wisdom, she continues to guide students from India and around the world through authentic yoga practice.
                         </p>
 
                         <ul className="mb-8 space-y-3">
                             {[
-                                "Yoga Ratna Award Winner",
-                                "Author of \"Arogyaniki Arunayoga\"",
-                                "Wonder Book of Records Holder",
-                                "Trained by Legendary Gurus",
+                                "30+ years of dedicated yoga teaching",
+                                "2000+ yoga teachers trained",
+                                "Traditional Guru Parampara lineage",
+                                "Specialized therapeutic yoga guidance",
                             ].map((item, index) => (
                                 <li key={index} className="flex items-center gap-3">
                                     <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
@@ -74,9 +48,58 @@ export default function AboutPreview() {
 
                         <Link href="/about/founder">
                             <Button size="lg" className="bg-primary hover:bg-primary/90">
-                                Learn More About Our Founder
+                                Learn More About Founder
                             </Button>
                         </Link>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7, delay: 0.1 }}
+                        className="order-1 lg:order-2"
+                    >
+                        <div className="relative h-[380px] w-full rounded-2xl overflow-hidden shadow-xl">
+                            <Image
+                                src="/assets/Yoga-Guru-Arunadevi_1.jpg"
+                                alt="Yoga Guru Arunadevi"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                    </motion.div>
+                </div>
+
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                    >
+                        <div className="relative h-[320px] w-full rounded-2xl overflow-hidden shadow-xl">
+                            <Image
+                                src="/assets/IMG_0872.jpg"
+                                alt="Arunayoga campus"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7, delay: 0.1 }}
+                    >
+                        <h3 className="text-2xl lg:text-3xl font-primary font-bold text-text mb-4 leading-snug">
+                            Surrounded by lush greenery - a unique and serene place to practice yoga and meditation.
+                        </h3>
+                        <p className="text-gray-600 text-lg leading-relaxed">
+                            Our institute environment supports focused learning, mindful practice, and complete physical-mental rejuvenation through traditional yoga and wellness disciplines.
+                        </p>
                     </motion.div>
                 </div>
             </div>

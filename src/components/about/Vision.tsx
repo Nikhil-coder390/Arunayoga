@@ -2,12 +2,19 @@
 
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
+import Image from "next/image";
+import visionImage from "@/assets/arunadevi-3.jpg";
 
 export default function Vision() {
     return (
         <section className="relative py-24 bg-brand-dark-grey text-white overflow-hidden">
-            {/* Background Image Placeholder */}
-            <div className="absolute inset-0 opacity-20 bg-[url('/hero-bg.png')] bg-cover bg-center" />
+            <Image
+                src={visionImage}
+                alt="Arunayoga vision"
+                fill
+                className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/65" />
 
             <div className="container mx-auto px-4 relative z-10 text-center">
                 <motion.div

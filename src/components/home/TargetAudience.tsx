@@ -1,6 +1,7 @@
 "use client";
 
 import { User, Activity, GraduationCap, Globe, Heart } from "lucide-react";
+import Link from "next/link";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
 
@@ -8,32 +9,37 @@ const audiences = [
     {
         icon: User,
         title: "New to Yoga",
-        text: "Personalized assessment and individual path creation",
-        cta: "Book Demo Class",
+        text: "Arunayoga helps identify your goals, evaluate your current condition, and carve an individual yoga path.",
+        cta: "Contact for Demo",
+        href: "/contact?subject=demo",
     },
     {
         icon: Activity,
-        title: "Advanced Practitioners",
-        text: "Master Hatha, Ashtanga, Vinyasa, Kriya, and more",
-        cta: "View Classes",
+        title: "Advanced Yoga",
+        text: "Deepen your practice through Hatha, Ashtanga, Vinyasa, Kriya, Therapeutic and Competitive Yoga with advanced Mudra, Bandha and Pranayama.",
+        cta: "To know more",
+        href: "/classes",
     },
     {
         icon: GraduationCap,
-        title: "Aspiring Teachers",
-        text: "Internationally recognized 200/300/500-hour programs",
-        cta: "Teacher Training",
+        title: "Yoga Teacher Training",
+        text: "Become a teacher through Diploma, Advanced Diploma and PG Diploma programs with traditional and internationally recognized curriculum.",
+        cta: "Explore Courses",
+        href: "/teacher-training",
     },
     {
         icon: Globe,
         title: "International Students",
-        text: "One-month intensive programs with global recognition",
+        text: "One-month full-time intensive training for visiting students to prepare for global teacher certification pathways.",
         cta: "Learn More",
+        href: "/teacher-training",
     },
     {
         icon: Heart,
-        title: "Health Seekers",
-        text: "Ayurvedic treatments for stress, pain, and chronic conditions",
+        title: "Health Problems",
+        text: "Natural therapies for stress and chronic conditions including Ayurveda, Detoxification, Stress-relief, Panchakarma and allied healing approaches.",
         cta: "View Treatments",
+        href: "/wellness",
     },
 ];
 
@@ -46,7 +52,7 @@ export default function TargetAudience() {
                         Who We Serve
                     </h2>
                     <p className="text-text max-w-2xl mx-auto">
-                        Whether you are beginning your journey or seeking mastery, we have a path for you.
+                        Programs and guidance for beginners, advanced practitioners, aspiring teachers, international learners and wellness seekers.
                     </p>
                 </div>
 
@@ -68,9 +74,11 @@ export default function TargetAudience() {
                             <p className="text-gray-600 mb-6 flex-grow text-sm leading-relaxed">
                                 {item.text}
                             </p>
-                            <Button variant="outline" size="sm" className="w-full">
-                                {item.cta}
-                            </Button>
+                            <Link href={item.href} className="w-full">
+                                <Button variant="outline" size="sm" className="w-full">
+                                    {item.cta}
+                                </Button>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>

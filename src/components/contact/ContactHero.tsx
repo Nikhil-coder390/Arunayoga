@@ -1,13 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+import contactHeroImage from "@/assets/arunadevi-1.jpg";
 
 export default function ContactHero() {
     return (
         <section className="relative py-24 bg-brand-dark-grey text-white overflow-hidden">
-            {/* Abstract Background */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+            <Image
+                src={contactHeroImage}
+                alt="Contact Arunayoga"
+                fill
+                priority
+                className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/65" />
 
             <div className="container mx-auto px-4 relative z-10 text-center">
                 <motion.div

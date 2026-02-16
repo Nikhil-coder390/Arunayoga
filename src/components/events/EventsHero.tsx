@@ -1,12 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+import eventsHeroImage from "@/assets/community-2.jpg";
 
 export default function EventsHero() {
     return (
         <section className="relative py-24 bg-brand-dark-grey text-white overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
+            <Image
+                src={eventsHeroImage}
+                alt="Arunayoga events"
+                fill
+                priority
+                className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/60" />
 
             <div className="container mx-auto px-4 relative z-10 text-center">
                 <motion.div

@@ -3,37 +3,59 @@
 import { motion } from "framer-motion";
 import { Check, Star, Shield, Award } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const courses = [
     {
-        title: "200 Hour TTC",
-        subtitle: "Foundation Course",
-        desc: "Perfect for beginners and those looking to deepen their personal practice. Learn the fundamentals of Hatha & Ashtanga Yoga.",
-        duration: "4 Weeks / 1 Month",
-        features: ["Yoga Philosophy & History", "Asana Alignment & Adjustment", "Pranayama & Meditation", "Teaching Methodology"],
+        title: "Diploma in Yoga",
+        subtitle: "200 Hours",
+        desc: "Learn Asanas, Mudras, Bandhas, Pranayamas, Shatkriyas, Chanting, Mantras, relaxation techniques, Yoga Nidra, Meditation and traditional yoga techniques.",
+        duration: "4 Weeks",
+        price: "INR 75,000 / USD 1,800",
+        features: [
+            "Teaching Methodology & Alignment",
+            "Patanjali Yoga Sutras",
+            "Anatomy & Physiology",
+            "Teaching Practicum with Feedback"
+        ],
+        certification: "Arunayoga + RYT200 (Yoga Alliance) + Annamalai University*",
         icon: Star,
         color: "bg-brand-green",
-        button: "brand-green"
+        link: "/teacher-training/diploma-200",
     },
     {
-        title: "300 Hour TTC",
-        subtitle: "Advanced Course",
-        desc: "For certified 200-hour teachers ready to take their skills to the next level. Dive deeper into therapy, advanced asanas, and anatomy.",
-        duration: "6 Weeks / 1.5 Months",
-        features: ["Advanced Anatomy & Physiology", "Yoga Therapy Techniques", "Ayurveda Fundamentals", "Advanced Kriyas"],
+        title: "Advanced Diploma",
+        subtitle: "300 Hours",
+        desc: "For certified 200-hour teachers ready to deepen their practice. Advanced therapy techniques, anatomy, and Ayurveda fundamentals.",
+        duration: "6 Weeks",
+        price: "Contact for Details",
+        features: [
+            "Advanced Anatomy & Physiology",
+            "Yoga Therapy Techniques",
+            "Ayurveda Fundamentals",
+            "Advanced Kriyas & Pranayama"
+        ],
+        certification: "Arunayoga + RYT300 (Yoga Alliance) + Annamalai University*",
         icon: Shield,
         color: "bg-brand-blue",
-        button: "brand-blue"
+        link: "/teacher-training/advanced-300",
     },
     {
-        title: "500 Hour TTC",
-        subtitle: "Master Level",
-        desc: "The ultimate certification combining 200 and 300-hour curriculums. Become a master teacher with comprehensive knowledge.",
-        duration: "10 Weeks / 2.5 Months",
-        features: ["Complete Mastery of Yoga", "Research & Thesis", "Internship Opportunities", "Lifestyle Management"],
+        title: "PG Diploma in Yoga",
+        subtitle: "500 Hours",
+        desc: "The ultimate certification combining 200 and 300-hour curriculums. Become a master teacher with comprehensive knowledge and expertise.",
+        duration: "10 Weeks",
+        price: "Contact for Details",
+        features: [
+            "Complete Mastery of Yoga",
+            "Research & Thesis Work",
+            "Internship Opportunities",
+            "Lifestyle & Ethics Management"
+        ],
+        certification: "Arunayoga + RYT500 (Yoga Alliance) + Annamalai University*",
         icon: Award,
         color: "bg-primary",
-        button: "primary"
+        link: "/teacher-training/pg-diploma-500",
     }
 ];
 
@@ -69,12 +91,17 @@ export default function CourseLevels() {
                             <div className="p-8 flex flex-col flex-grow">
                                 <div className="mb-6 text-center">
                                     <p className="text-gray-600 mb-4 text-sm leading-relaxed">{course.desc}</p>
-                                    <div className="inline-block px-4 py-2 bg-gray-100 rounded-full text-xs font-bold text-gray-700">
-                                        Duration: {course.duration}
+                                    <div className="flex flex-wrap gap-2 justify-center">
+                                        <span className="px-3 py-1 bg-gray-100 rounded-full text-xs font-bold text-gray-700">
+                                            Duration: {course.duration}
+                                        </span>
+                                        <span className="px-3 py-1 bg-primary/10 rounded-full text-xs font-bold text-primary">
+                                            {course.price}
+                                        </span>
                                     </div>
                                 </div>
 
-                                <ul className="space-y-3 mb-8 flex-grow">
+                                <ul className="space-y-3 mb-6 flex-grow">
                                     {course.features.map((feature, i) => (
                                         <li key={i} className="flex items-start gap-3 text-sm text-gray-700">
                                             <Check className={`w-5 h-5 ${course.color.replace('bg-', 'text-')} flex-shrink-0`} />
@@ -83,9 +110,15 @@ export default function CourseLevels() {
                                     ))}
                                 </ul>
 
-                                <Button className={`w-full ${course.color} hover:opacity-90 border-0`}>
-                                    Course Details
-                                </Button>
+                                <p className="text-xs text-gray-500 mb-4 text-center">
+                                    <strong>Certification:</strong> {course.certification}
+                                </p>
+
+                                <Link href={course.link} className="w-full">
+                                    <Button className={`w-full ${course.color} hover:opacity-90 border-0`}>
+                                        View Details
+                                    </Button>
+                                </Link>
                             </div>
                         </motion.div>
                     ))}

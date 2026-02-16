@@ -9,8 +9,8 @@ export default function FounderHero() {
             {/* Left: Image */}
             <div className="lg:w-1/2 relative h-1/2 lg:h-full">
                 <Image
-                    src="/about-founder.png"
-                    alt="Yogini Arunadevi in meditation"
+                    src="/assets/Yoga-Guru-Arunadevi_1.jpg"
+                    alt="Yogini Arunadevi with students in meditation"
                     fill
                     className="object-cover"
                     priority

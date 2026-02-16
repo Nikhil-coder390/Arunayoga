@@ -11,10 +11,10 @@ export default function BlogPage() {
             <div className="bg-brand-light-blue/10 py-16 text-center">
                 <div className="container mx-auto px-4">
                     <h1 className="text-4xl lg:text-5xl font-bold font-primary text-primary mb-4">Arunayoga Journal</h1>
-                    <p className="text-lg text-gray-600">Thoughts, stories, and ideas from our community.</p>
+                    <p className="text-lg text-gray-600">Traditional yoga, ayurveda and wellness insights from Arunayoga.</p>
                 </div>
             </div>
-            <BlogList />
+            <BlogList showHeader={false} />
         </main>
     );
 }

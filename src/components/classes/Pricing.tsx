@@ -2,6 +2,7 @@
 
 import { Check } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const plans = [
     {
@@ -35,9 +36,12 @@ export default function Pricing() {
     return (
         <section className="py-20 bg-gray-50">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold font-primary text-primary text-center mb-12">
-                    Simple Pricing
+                <h2 className="text-3xl font-bold font-primary text-primary text-center mb-4">
+                    Class Pricing
                 </h2>
+                <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Contact us for current pricing and special offers. Prices may vary based on program and duration.
+                </p>
 
                 <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     {plans.map((plan, index) => (
@@ -69,12 +73,14 @@ export default function Pricing() {
                                 ))}
                             </ul>
 
-                            <Button
-                                variant={plan.highlight ? "primary" : "outline"}
-                                className="w-full"
-                            >
-                                {plan.cta}
-                            </Button>
+                            <Link href="/contact?subject=pricing" className="w-full">
+                                <Button
+                                    variant={plan.highlight ? "primary" : "outline"}
+                                    className="w-full"
+                                >
+                                    {plan.cta}
+                                </Button>
+                            </Link>
                         </div>
                     ))}
                 </div>

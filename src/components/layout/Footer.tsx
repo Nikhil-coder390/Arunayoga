@@ -11,15 +11,26 @@ export default function Footer() {
                     <div>
                         <h3 className="text-xl font-bold mb-6 font-primary">Quick Links</h3>
                         <ul className="space-y-3">
-                            {["About Us", "Classes", "Teacher Training", "Treatments", "Blog", "Contact"].map(
-                                (item) => (
-                                    <li key={item}>
-                                        <Link href="#" className="text-gray-300 hover:text-primary transition-colors">
-                                            {item}
-                                        </Link>
-                                    </li>
-                                )
-                            )}
+                            <li>
+                                <Link href="/classes" className="text-gray-300 hover:text-primary transition-colors">
+                                    Daily Classes
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/teacher-training" className="text-gray-300 hover:text-primary transition-colors">
+                                    Teacher Training
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/wellness" className="text-gray-300 hover:text-primary transition-colors">
+                                    Ayurvedic Treatments
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/contact" className="text-gray-300 hover:text-primary transition-colors">
+                                    Contact Us
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -27,19 +38,21 @@ export default function Footer() {
                     <div>
                         <h3 className="text-xl font-bold mb-6 font-primary">Programs</h3>
                         <ul className="space-y-3">
-                            {[
-                                "200-Hour Diploma",
-                                "300-Hour Advanced",
-                                "500-Hour PG Diploma",
-                                "Daily Classes",
-                                "Retreats & Events",
-                            ].map((item) => (
-                                <li key={item}>
-                                    <Link href="#" className="text-gray-300 hover:text-primary transition-colors">
-                                        {item}
-                                    </Link>
-                                </li>
-                            ))}
+                            <li>
+                                <Link href="/teacher-training" className="text-gray-300 hover:text-primary transition-colors">
+                                    Diploma in Yoga (200 Hours)
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/teacher-training" className="text-gray-300 hover:text-primary transition-colors">
+                                    Advanced Diploma (300 Hours)
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/teacher-training" className="text-gray-300 hover:text-primary transition-colors">
+                                    PG Diploma in Yoga (500 Hours)
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -82,18 +95,9 @@ export default function Footer() {
                             <Button size="sm">Subscribe</Button>
                         </div>
                         <div className="flex gap-4">
-                            <Link href="#" className="p-2 bg-white/10 rounded-full hover:bg-primary transition-colors">
+                            <a href="https://www.facebook.com/arunayoga" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-primary transition-colors">
                                 <Facebook className="w-5 h-5" />
-                            </Link>
-                            <Link href="#" className="p-2 bg-white/10 rounded-full hover:bg-primary transition-colors">
-                                <Instagram className="w-5 h-5" />
-                            </Link>
-                            <Link href="#" className="p-2 bg-white/10 rounded-full hover:bg-primary transition-colors">
-                                <Youtube className="w-5 h-5" />
-                            </Link>
-                            <Link href="#" className="p-2 bg-white/10 rounded-full hover:bg-primary transition-colors">
-                                <Linkedin className="w-5 h-5" />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

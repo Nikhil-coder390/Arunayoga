@@ -1,50 +1,63 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FacultyPreview() {
     return (
         <section className="py-20 bg-white">
-            <div className="container mx-auto px-4 text-center">
-                <h2 className="text-3xl font-bold font-primary text-secondary mb-12">
-                    Learn from the Masters
-                </h2>
+            <div className="container mx-auto px-4">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold font-primary text-secondary mb-4">
+                        Learn from Yogini Arunadevi
+                    </h2>
+                    <p className="text-gray-600 max-w-2xl mx-auto">
+                        Lead Trainer with 30+ years of experience, descending from a lineage of spiritual healers
+                    </p>
+                </div>
 
-                <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-                    {/* Founder Card */}
-                    <div className="flex flex-col items-center">
-                        <div className="w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-primary">
+                <div className="flex flex-col lg:flex-row gap-12 items-center max-w-5xl mx-auto">
+                    {/* Main Image */}
+                    <div className="lg:w-1/2">
+                        <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                                src="/about-founder.png"
+                                src="/assets/arunadevi-1.jpg"
                                 alt="Yogini Arunadevi"
-                                width={200}
-                                height={200}
-                                className="object-cover w-full h-full"
+                                fill
+                                className="object-cover"
                             />
                         </div>
-                        <h3 className="text-2xl font-bold font-primary">Yogini Arunadevi</h3>
-                        <p className="text-accent font-medium mb-2">Lead Trainer</p>
-                        <p className="text-gray-500 text-sm max-w-xs">30+ Years Experience. Master of Hatha & Ashtanga Yoga. Founder of Arunayoga.</p>
                     </div>
 
-                    {/* Placeholder Faculty 1 */}
-                    <div className="flex flex-col items-center opacity-70">
-                        <div className="w-40 h-40 rounded-full bg-gray-200 mb-6 flex items-center justify-center">
-                            <span className="text-gray-400 text-xs">Faculty Photo</span>
-                        </div>
-                        <h3 className="text-xl font-bold font-primary">Dr. Ramesh Kumar</h3>
-                        <p className="text-gray-600 font-medium mb-2">Anatomy Expert</p>
-                        <p className="text-gray-500 text-sm max-w-xs">Ayurvedic Doctor with specialization in Yoga Therapy and Anatomy.</p>
-                    </div>
-
-                    {/* Placeholder Faculty 2 */}
-                    <div className="flex flex-col items-center opacity-70">
-                        <div className="w-40 h-40 rounded-full bg-gray-200 mb-6 flex items-center justify-center">
-                            <span className="text-gray-400 text-xs">Faculty Photo</span>
-                        </div>
-                        <h3 className="text-xl font-bold font-primary">Priya Sharma</h3>
-                        <p className="text-gray-600 font-medium mb-2">Philosophy Teacher</p>
-                        <p className="text-gray-500 text-sm max-w-xs">Scholar in Sanskrit and Vedic texts. Expert in Yoga Sutras.</p>
+                    {/* Content */}
+                    <div className="lg:w-1/2 text-center lg:text-left">
+                        <h3 className="text-3xl font-bold font-primary text-primary mb-4">Yogini Arunadevi</h3>
+                        <p className="text-accent font-semibold text-lg mb-4">Founder & Lead Trainer</p>
+                        <ul className="space-y-3 text-gray-600 mb-6">
+                            <li className="flex items-start gap-2">
+                                <span className="text-primary font-bold">•</span>
+                                30+ years of teaching experience
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-primary font-bold">•</span>
+                                Descendant of Siddhayogini Sadamma, legendary yoga guru
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-primary font-bold">•</span>
+                                Master of Hatha, Ashtanga & Therapeutic Yoga
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-primary font-bold">•</span>
+                                Author of "Arogyaniki Arunayoga" and Scientific Yoga DVDs
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-primary font-bold">•</span>
+                                Featured on TV9, ETV and major media outlets
+                            </li>
+                        </ul>
+                        <Link href="/contact?subject=teacher-training" className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                            Train with Yogini Arunadevi
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -2,12 +2,19 @@
 
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import wellnessHeroImage from "@/assets/ayurvedic-treatment-1.jpg";
 
 export default function WellnessHero() {
     return (
         <section className="relative h-[80vh] flex items-center justify-center bg-brand-green overflow-hidden">
-            {/* Background Image Placeholder */}
-            <div className="absolute inset-0 opacity-40 bg-[url('/classes-preview.png')] bg-cover bg-center" />
+            <Image
+                src={wellnessHeroImage}
+                alt="Ayurvedic wellness treatments"
+                fill
+                priority
+                className="object-cover"
+            />
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-brand-green/80 to-brand-green/60" />

@@ -7,7 +7,7 @@ export default function TrainingHero() {
     return (
         <section className="relative min-h-[80vh] flex items-center bg-brand-dark-grey text-white overflow-hidden">
             {/* Background with overlay */}
-            <div className="absolute inset-0 z-0 bg-[url('/training-preview.png')] bg-cover bg-center" />
+            <div className="absolute inset-0 z-0 bg-[url('/assets/community-1.jpeg')] bg-cover bg-center" />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-0" />
 
             <div className="container mx-auto px-4 relative z-10 pt-20">
@@ -28,12 +28,16 @@ export default function TrainingHero() {
                             Embark on a life-changing journey with our comprehensive teacher training programs. Deepen your practice, master the art of teaching, and transform lives.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8">
-                                Download Brochure
-                            </Button>
-                            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg px-8">
-                                View Upcoming Dates
-                            </Button>
+                            <a href="/contact?subject=teacher-training">
+                                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8">
+                                    Apply Now
+                                </Button>
+                            </a>
+                            <a href="#courses">
+                                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg px-8">
+                                    View Courses
+                                </Button>
+                            </a>
                         </div>
                     </motion.div>
                 </div>

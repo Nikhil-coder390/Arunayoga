@@ -1,23 +1,46 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 const pastEvents = [
-    { title: "Yoga for Stress", year: "2025", color: "bg-blue-200" },
-    { title: "Suryanamaskar Marathon", year: "2024", color: "bg-orange-200" },
-    { title: "Women's Wellness Day", year: "2024", color: "bg-pink-200" },
-    { title: "Advanced Asana Workshop", year: "2023", color: "bg-purple-200" },
+    { 
+        title: "Community Yoga Sessions", 
+        description: "Regular community yoga practice sessions bringing together practitioners of all levels",
+        image: "/assets/community-1.jpeg" 
+    },
+    { 
+        title: "Group Training Programs", 
+        description: "Intensive yoga training programs for aspiring teachers and dedicated practitioners",
+        image: "/assets/community-2.jpg" 
+    },
+    { 
+        title: "Media Appearances", 
+        description: "Yogini Arunadevi featured on TV9, ETV and other major media outlets",
+        image: "/assets/etv-news-yoga.png" 
+    },
+    { 
+        title: "Yoga Demonstrations", 
+        description: "Public demonstrations and workshops showcasing traditional yoga practices",
+        image: "/assets/classes-1.jpg" 
+    },
 ];
 
 export default function PastEvents() {
     return (
         <section className="py-20 bg-gray-50">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold font-primary text-secondary mb-12 text-center">
-                    Past Events Gallery
-                </h2>
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold font-primary text-secondary mb-4">
+                        Events & Activities
+                    </h2>
+                    <p className="text-gray-600 max-w-2xl mx-auto">
+                        Join our community events, workshops, and special programs throughout the year
+                    </p>
+                </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-[400px]">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {pastEvents.map((event, index) => (
                         <motion.div
                             key={index}
@@ -25,18 +48,27 @@ export default function PastEvents() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className={`relative rounded-xl overflow-hidden ${event.color} group cursor-pointer`}
+                            className="relative rounded-xl overflow-hidden group cursor-pointer h-80 shadow-lg"
                         >
-                            {/* Hover Overlay */}
-                            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center text-white p-4 text-center">
-                                <h3 className="font-bold text-lg">{event.title}</h3>
-                                <span className="text-sm">{event.year}</span>
-                            </div>
-                            <div className="absolute inset-0 flex items-center justify-center text-gray-700 font-bold opacity-30">
-                                [Image: {event.title}]
+                            <Image
+                                src={event.image}
+                                alt={event.title}
+                                fill
+                                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                <h3 className="font-bold text-lg mb-2">{event.title}</h3>
+                                <p className="text-sm text-gray-200 line-clamp-2">{event.description}</p>
                             </div>
                         </motion.div>
                     ))}
+                </div>
+
+                <div className="mt-12 text-center">
+                    <Link href="/contact?subject=general" className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                        Inquire About Upcoming Events
+                    </Link>
                 </div>
             </div>
         </section>

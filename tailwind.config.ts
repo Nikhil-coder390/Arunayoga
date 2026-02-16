@@ -23,6 +23,7 @@ const config: Config = {
         white: "var(--e-global-color-15d6a64c)",
       },
       fontFamily: {
+        primary: ["var(--font-quicksand)", "sans-serif"],
         sans: ["var(--font-quicksand)", "sans-serif"],
       },
     },

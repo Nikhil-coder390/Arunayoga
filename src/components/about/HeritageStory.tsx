@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function HeritageStory() {
     return (
@@ -30,9 +31,15 @@ export default function HeritageStory() {
                         viewport={{ once: true }}
                         className="md:w-1/2 relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl"
                     >
-                        {/* Placeholder for historical image */}
-                        <div className="absolute inset-0 bg-sepia-0 bg-brand-medium-grey flex items-center justify-center">
-                            <span className="text-white/50">Historical Image Placeholder</span>
+                        <Image
+                            src="/assets/siddhayogini-sadamma-1.jpg"
+                            alt="Siddhayogini Sadamma - Great Grandmother and Legendary Yoga Guru"
+                            fill
+                            className="object-contain grayscale"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                            <p className="text-white font-semibold text-lg">Siddhayogini Sadamma</p>
+                            <p className="text-gray-200 text-sm">Legendary Yoga Guru & Healer</p>
                         </div>
                     </motion.div>
                 </div>

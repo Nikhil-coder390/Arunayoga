@@ -20,11 +20,20 @@ export default function ContactContent() {
                                     <MapPin className="w-6 h-6 text-primary mt-1" />
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-1">Our Location</h3>
-                                        <p className="text-gray-600">
+<p className="text-gray-600">
                                             Arunayoga Training & Research Institute,<br />
-                                            Plot No. 123, Jubilee Hills,<br />
+                                            Park #7, Rd Number 44,<br />
+                                            Kavuri Hills, Madhapur,<br />
                                             Hyderabad, Telangana - 500033
                                         </p>
+                                        <a 
+                                            href="https://www.google.co.in/maps/place/Aruna+Yoga/@17.4353349,78.3967849,15z" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="inline-block mt-2 text-primary text-sm font-medium hover:underline"
+                                        >
+                                            View on Google Maps →
+                                        </a>
                                     </div>
                                 </div>
 
@@ -32,8 +41,7 @@ export default function ContactContent() {
                                     <Phone className="w-6 h-6 text-primary mt-1" />
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                                        <p className="text-gray-600">+91 98765 43210</p>
-                                        <p className="text-gray-600">+91 40 1234 5678</p>
+                                        <p className="text-gray-600">+91 9440698003</p>
                                     </div>
                                 </div>
 
@@ -41,8 +49,7 @@ export default function ContactContent() {
                                     <Mail className="w-6 h-6 text-primary mt-1" />
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                                        <p className="text-gray-600">info@arunayoga.in</p>
-                                        <p className="text-gray-600">admissions@arunayoga.in</p>
+                                        <p className="text-gray-600">info@arunayoga.co.in</p>
                                     </div>
                                 </div>
 
@@ -60,14 +67,8 @@ export default function ContactContent() {
                         <div>
                             <h3 className="font-bold text-gray-900 mb-4">Follow Us</h3>
                             <div className="flex gap-4">
-                                <a href="#" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                                <a href="https://www.facebook.com/arunayoga" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                                     <Facebook className="w-5 h-5" />
-                                </a>
-                                <a href="#" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                                    <Instagram className="w-5 h-5" />
-                                </a>
-                                <a href="#" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                                    <Youtube className="w-5 h-5" />
                                 </a>
                             </div>
                         </div>
@@ -119,15 +120,34 @@ export default function ContactContent() {
 
                             <div className="space-y-2">
                                 <label htmlFor="subject" className="text-sm font-medium text-gray-700">Subject</label>
-                                <select
+<select
                                     id="subject"
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all bg-white"
                                 >
-                                    <option>General Inquiry</option>
-                                    <option>Class Enquiry</option>
-                                    <option>Teacher Training</option>
-                                    <option>Wellness Consultation</option>
-                                    <option>Other</option>
+                                    <option value="">-- Select Purpose --</option>
+                                    <optgroup label="Daily Classes">
+                                        <option value="demo">Book a Demo Class</option>
+                                        <option value="class-inquiry">Class Schedule Inquiry</option>
+                                        <option value="pricing">Pricing Information</option>
+                                    </optgroup>
+                                    <optgroup label="Teacher Training">
+                                        <option value="diploma-200">Diploma in Yoga (200 Hours)</option>
+                                        <option value="advanced-300">Advanced Diploma (300 Hours)</option>
+                                        <option value="pg-diploma-500">PG Diploma in Yoga (500 Hours)</option>
+                                        <option value="teacher-training">General Teacher Training Inquiry</option>
+                                    </optgroup>
+                                    <optgroup label="Ayurvedic Treatments">
+                                        <option value="treatment">Book a Treatment</option>
+                                        <option value="consultation">Wellness Consultation</option>
+                                        <option value="detox">Ayurvedic Detox Program</option>
+                                        <option value="stress-relief">Stress Relief Program</option>
+                                    </optgroup>
+                                    <optgroup label="Other">
+                                        <option value="general">General Inquiry</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="collaboration">Collaboration / Partnership</option>
+                                        <option value="media">Media Inquiry</option>
+                                    </optgroup>
                                 </select>
                             </div>
 
