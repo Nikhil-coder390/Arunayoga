@@ -5,8 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Check, Clock, MapPin, Users, Award, BookOpen } from "lucide-react";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import logoImage from "@/assets/logo.png";
+import yogaAllianceImage from "@/assets/download.png";
+import affiliationImage from "@/assets/affiliation.jpg";
 
 const curriculum = [
     "Complete Mastery of Yoga Asanas",
@@ -35,7 +36,6 @@ const benefits = [
 export default function PGDiploma500Page() {
     return (
         <>
-            <Header />
             <main className="pt-20">
                 {/* Hero Section */}
                 <section className="relative min-h-[60vh] flex items-center bg-brand-dark-grey text-white overflow-hidden">
@@ -48,7 +48,7 @@ export default function PGDiploma500Page() {
                         />
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40 z-0" />
-                    
+
                     <div className="container mx-auto px-4 relative z-10">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
@@ -64,7 +64,7 @@ export default function PGDiploma500Page() {
                                 <span className="block text-accent">500 Hours</span>
                             </h1>
                             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                                The ultimate certification combining 200 and 300-hour curriculums. 
+                                The ultimate certification combining 200 and 300-hour curriculums.
                                 Become a master teacher with comprehensive knowledge and expertise.
                             </p>
                         </motion.div>
@@ -180,24 +180,15 @@ export default function PGDiploma500Page() {
                                 <p className="text-lg text-gray-700 mb-6">
                                     Upon successful completion, you will receive certification from:
                                 </p>
-                                <div className="flex flex-wrap justify-center gap-8">
-                                    <div className="text-center">
-                                        <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                                            <Award className="w-10 h-10 text-accent" />
-                                        </div>
-                                        <p className="font-bold">Arunayoga</p>
+                                <div className="flex flex-wrap justify-center items-center gap-12">
+                                    <div className="relative w-40 h-32">
+                                        <Image src={logoImage} alt="Arunayoga" fill className="object-contain" />
                                     </div>
-                                    <div className="text-center">
-                                        <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                                            <Award className="w-10 h-10 text-accent" />
-                                        </div>
-                                        <p className="font-bold">RYT500 - Yoga Alliance USA</p>
+                                    <div className="relative w-40 h-32">
+                                        <Image src={yogaAllianceImage} alt="Yoga Alliance USA" fill className="object-contain" />
                                     </div>
-                                    <div className="text-center">
-                                        <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                                            <Award className="w-10 h-10 text-accent" />
-                                        </div>
-                                        <p className="font-bold">Annamalai University*</p>
+                                    <div className="relative w-40 h-32">
+                                        <Image src={affiliationImage} alt="Annamalai University" fill className="object-contain" />
                                     </div>
                                 </div>
                             </div>
@@ -227,7 +218,6 @@ export default function PGDiploma500Page() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

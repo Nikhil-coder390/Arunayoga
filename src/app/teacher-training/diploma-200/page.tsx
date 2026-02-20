@@ -5,8 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Check, Clock, MapPin, Users, Award, Calendar } from "lucide-react";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import logoImage from "@/assets/logo.png";
+import yogaAllianceImage from "@/assets/download.png";
+import affiliationImage from "@/assets/affiliation.jpg";
 
 const curriculum = [
     "Asanas, Mudras, Bandhas, Pranayamas",
@@ -38,7 +39,6 @@ const codeOfConduct = [
 export default function Diploma200Page() {
     return (
         <>
-            <Header />
             <main className="pt-20">
                 {/* Hero Section */}
                 <section className="relative min-h-[60vh] flex items-center bg-brand-dark-grey text-white overflow-hidden">
@@ -51,7 +51,7 @@ export default function Diploma200Page() {
                         />
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40 z-0" />
-                    
+
                     <div className="container mx-auto px-4 relative z-10">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
@@ -67,7 +67,7 @@ export default function Diploma200Page() {
                                 <span className="block text-primary">200 Hours</span>
                             </h1>
                             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                                Perfect for beginners and those looking to deepen their personal practice. 
+                                Perfect for beginners and those looking to deepen their personal practice.
                                 Learn the fundamentals of traditional yoga techniques.
                             </p>
                         </motion.div>
@@ -204,24 +204,15 @@ export default function Diploma200Page() {
                                 <p className="text-lg text-gray-700 mb-6">
                                     Upon successful completion, you will receive certification from:
                                 </p>
-                                <div className="flex flex-wrap justify-center gap-8">
-                                    <div className="text-center">
-                                        <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                                            <Award className="w-10 h-10 text-primary" />
-                                        </div>
-                                        <p className="font-bold">Arunayoga</p>
+                                <div className="flex flex-wrap justify-center items-center gap-12">
+                                    <div className="relative w-40 h-32">
+                                        <Image src={logoImage} alt="Arunayoga" fill className="object-contain" />
                                     </div>
-                                    <div className="text-center">
-                                        <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                                            <Award className="w-10 h-10 text-primary" />
-                                        </div>
-                                        <p className="font-bold">RYT200 - Yoga Alliance USA</p>
+                                    <div className="relative w-40 h-32">
+                                        <Image src={yogaAllianceImage} alt="Yoga Alliance USA" fill className="object-contain" />
                                     </div>
-                                    <div className="text-center">
-                                        <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                                            <Award className="w-10 h-10 text-primary" />
-                                        </div>
-                                        <p className="font-bold">Annamalai University*</p>
+                                    <div className="relative w-40 h-32">
+                                        <Image src={affiliationImage} alt="Annamalai University" fill className="object-contain" />
                                     </div>
                                 </div>
                                 <p className="text-sm text-gray-500 mt-6">
@@ -239,8 +230,8 @@ export default function Diploma200Page() {
                             <h2 className="text-3xl font-bold font-primary text-center mb-8">Ethical Guidelines & Code of Conduct</h2>
                             <div className="bg-gray-50 rounded-2xl p-8">
                                 <p className="text-gray-700 mb-6">
-                                    Arunayoga adopts the ancient approach to yoga. The day begins with daily regimen (Dinacharya) 
-                                    and ancient code of conduct. Maharishi Patanjali prescribed Yama (social conduct) and 
+                                    Arunayoga adopts the ancient approach to yoga. The day begins with daily regimen (Dinacharya)
+                                    and ancient code of conduct. Maharishi Patanjali prescribed Yama (social conduct) and
                                     Niyama (personal conduct) which students are expected to practice sincerely.
                                 </p>
                                 <ul className="space-y-3">
@@ -278,7 +269,6 @@ export default function Diploma200Page() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

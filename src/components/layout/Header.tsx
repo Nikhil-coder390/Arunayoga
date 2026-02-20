@@ -14,8 +14,8 @@ const navItems = [
         href: "/about",
         children: [
             { name: "Founder", href: "/about/founder" },
-            { name: "Institute", href: "/about#institute" },
-            { name: "Team", href: "/about#team" },
+            { name: "Institute", href: "/about/institute" },
+            { name: "Team", href: "/about/team" },
         ],
     },
     { name: "Classes", href: "/classes" },
@@ -30,12 +30,12 @@ const navItems = [
         ],
     },
     {
-        name: "Treatments",
+        name: "Wellness",
         href: "/wellness",
         children: [
-            { name: "Ayurvedic Treatments", href: "/wellness" },
-            { name: "Ayurvedic Detox", href: "/wellness#detox" },
-            { name: "Ayurvedic Stress-relief", href: "/wellness#stress-relief" },
+            { name: "Ayurvedic Treatments", href: "/wellness/treatments" },
+            { name: "Ayurvedic Detox", href: "/wellness/detox" },
+            { name: "Stress Relief", href: "/wellness/stress-relief" },
         ],
     },
     { name: "Events", href: "/events" },
