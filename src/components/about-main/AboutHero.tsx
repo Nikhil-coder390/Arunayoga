@@ -5,13 +5,14 @@ import Image from "next/image";
 
 export default function AboutHero() {
     return (
-        <section className="relative h-[60vh] flex items-center justify-center bg-brand-dark-grey text-white overflow-hidden">
+        <section className="relative h-[80vh] flex items-center justify-center bg-brand-dark-grey text-white overflow-hidden">
             <Image
-                src="/assets/arunadevi-2.png"
+                src="/assets/arunadevi-5.jpg"
                 alt="About Arunayoga"
                 fill
                 priority
                 className="object-cover"
+                style={{ transform: "scale(0.92)", objectPosition: "center 15%" }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-dark-grey/90 to-transparent" />
 

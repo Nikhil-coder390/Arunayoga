@@ -1,5 +1,5 @@
 import FounderHero from "@/components/about/FounderHero";
-import HeritageStory from "@/components/about/HeritageStory";
+import YogaLineageJourney from "@/components/about/YogaLineageJourney";
 import Achievements from "@/components/about/Achievements";
 
 export const metadata = {
@@ -11,7 +11,7 @@ export default function FounderPage() {
     return (
         <main className="min-h-screen">
             <FounderHero />
-            <HeritageStory />
+            <YogaLineageJourney />
             <Achievements />
         </main>
     );

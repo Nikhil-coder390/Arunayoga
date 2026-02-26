@@ -14,12 +14,12 @@ const founderImages = [
         caption: "Teaching Yoga"
     },
     {
-        image: "/assets/arunadevi-2.png",
+        image: "/assets/community-1.jpeg",
         caption: "With Students"
     },
     {
-        image: "/assets/community-1.jpeg",
-        caption: "Community Events"
+        image: "/assets/Achievements-1.jpg",
+        caption: "Acheivements"
     }
 ];
 
