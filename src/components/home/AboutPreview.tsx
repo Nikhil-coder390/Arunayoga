@@ -66,7 +66,7 @@ export default function AboutPreview() {
                         <div className="relative h-[380px] w-full rounded-2xl overflow-hidden shadow-xl">
                             <Image
                                 src="/assets/Yoga-Guru-Arunadevi_1.jpg"
-                                alt="Yoga Guru Arunadevi"
+                                alt="Yoga Guru Arunadevi — Founder of Arunayoga Training & Research Institute Hyderabad"
                                 fill
                                 className="object-cover"
                             />
@@ -84,7 +84,7 @@ export default function AboutPreview() {
                         <div className="relative h-[320px] w-full rounded-2xl overflow-hidden shadow-xl">
                             <Image
                                 src="/assets/IMG_0872.jpg"
-                                alt="Arunayoga campus"
+                                alt="Arunayoga Institute Campus in Banjara Hills Hyderabad — Peaceful Green Studio"
                                 fill
                                 className="object-cover"
                             />
