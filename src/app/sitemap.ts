@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: route === "" ? "daily" : "weekly",
-    priority: route === "" ? 1.0 : 0.8,
+    priority: route === "" ? 1.0 : route.startsWith("/teacher-training") || route.startsWith("/wellness") ? 0.9 : 0.8,
   }));
 
   const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
