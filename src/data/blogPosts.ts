@@ -39,13 +39,15 @@ export const blogPosts: BlogPost[] = [
     featuredImageCaption: "Students practicing mindful posture alignment under Master guidance at Arunayoga.",
     tags: ["Yoga Benefits", "Healthy Lifestyle", "Yoga Hyderabad", "Mindfulness"],
     content: [
-      "In our fast-paced modern lifestyle, physical stiffness, mental stress, and chronic burnout have become common challenges. While conventional exercise focuses primarily on physical stamina, authentic yoga works on the whole human being—aligning the body, breath, and mind.",
-      "At <a href='/about' class='text-primary underline font-medium'>Arunayoga Training & Research Institute in Hyderabad</a>, we teach yoga not merely as physical postures (asanas), but as an ancient science of life that rejuvenates every cell in the human body.",
-      "<h3>1. Holistic Physical Fitness & Posture Alignment</h3><p>Unlike high-impact workouts that strain joints, yoga gently builds functional strength, joint mobility, and spinal flexibility. Practicing postures like Tadasana, Bhujangasana, and Adho Mukha Svanasana corrects postural imbalances caused by long hours of desk work.</p>",
-      "<h3>2. Mental Clarity & Stress Reduction</h3><p>Through conscious breath regulation (<a href='/wellness' class='text-primary underline font-medium'>Pranayama</a>), yoga activates the parasympathetic nervous system, reducing cortisol (stress hormone) levels. Regular practitioners experience improved concentration, sharper memory, and emotional resilience.</p>",
-      "<h3>3. Immune System & Internal Organ Vitality</h3><p>Deep twisting postures and abdominal compression stimulate internal organs, enhance digestion, improve lymphatic drainage, and strengthen immunoglobulins—boosting natural immunity against illness.</p>",
-      "<h3>4. Prevention of Chronic Lifestyle Diseases</h3><p>Regular practice helps prevent and manage hypertension, Type-2 diabetes, cardiovascular issues, and hormonal imbalances. Therapeutic yoga protocols targeted specifically at spine care and joint mobility help maintain vitality well into senior years.</p>",
-      "If you are looking to start your wellness transformation, experience a complimentary class at the <a href='/classes' class='text-primary underline font-medium'>Best Yoga Centre in Hyderabad</a> today."
+      "<p class='text-xl text-gray-600 font-light leading-relaxed mb-6'>In our fast-paced modern lifestyle, physical stiffness, mental stress, and chronic burnout have become common challenges for professionals, students, and seniors alike. While conventional exercise focuses primarily on muscular stamina, authentic yoga works on the whole human being—aligning the body, breath, and mind in complete harmony.</p>",
+      "<p>At <a href='/about' class='text-primary font-bold hover:underline'>Arunayoga Training & Research Institute in Hyderabad</a>, we teach yoga not merely as physical exercise, but as an ancient science of life that rejuvenates every cell, organ, and nervous pathway in the human body.</p>",
+      "<blockquote className='my-8 border-l-4 border-primary bg-gray-50 p-6 rounded-r-2xl text-xl italic font-primary text-brand-dark-grey'>“Yoga is not about touching your toes. It is about what you learn on the way down—building resilience, breath control, and unshakeable inner peace.” — Yogini Arunadevi</blockquote>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>1. Holistic Physical Fitness & Posture Alignment</h2><p>Unlike high-impact workouts that can strain delicate joints, yoga gently builds functional core strength, joint mobility, and spinal flexibility. Practicing postures like Tadasana, Bhujangasana, and Adho Mukha Svanasana corrects postural imbalances caused by long hours of desk work and sedentary screen time.</p>",
+      "<h3 class='text-xl font-bold font-primary text-primary my-4'>Key Physical Benefits:</h3><ul class='list-disc pl-6 space-y-2 my-4'><li>Strengthens deep postural and stabilizing core muscles.</li><li>Increases spinal flexibility and intervertebral disk hydration.</li><li>Promotes joint lubrication and protects against early arthritis.</li></ul>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>2. Mental Clarity & Stress Reduction</h2><p>Through conscious breath regulation (<a href='/wellness' class='text-primary font-bold hover:underline'>Pranayama</a>), yoga directly activates the parasympathetic nervous system, lowering serum cortisol levels and calming overactive brainwaves. Regular practitioners report sharper focus, improved memory retention, and heightened emotional resilience.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>3. Immune System & Internal Organ Vitality</h2><p>Deep twisting postures, backward bends, and inversions massage internal organs, boost lymphatic circulation, improve digestion, and stimulate immunoglobulin production—enhancing your body's natural defense against seasonal illnesses.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>4. Prevention of Chronic Lifestyle Diseases</h2><p>Regular yoga practice plays a crucial role in preventing and managing hypertension, Type-2 diabetes, cardiovascular issues, and thyroid imbalances. Specialized <a href='/wellness' class='text-primary font-bold hover:underline'>Therapeutic Yoga protocols</a> tailored for spine care and paralysis rehabilitation help maintain independence and vitality into senior years.</p>",
+      "<p>Ready to experience the life-changing power of authentic yoga? Join our daily <a href='/classes' class='text-primary font-bold hover:underline'>Yoga Classes in Banjara Hills, Hyderabad</a> or book a complimentary trial class today.</p>"
     ],
     faqs: [
       {
@@ -82,18 +84,19 @@ export const blogPosts: BlogPost[] = [
     featuredImageCaption: "Daily yoga practice builds consistency, vitality, and inner calmness.",
     tags: ["Daily Yoga", "Health Benefits", "Asana Practice", "Hyderabad Yoga Studio"],
     content: [
-      "Making yoga a daily habit is one of the most empowering choices you can make for your long-term health. Whether you join early morning <a href='/classes' class='text-primary underline font-medium'>daily yoga classes in Hyderabad</a> or practice at home, consistency is key.",
-      "<h3>1. Enhanced Muscle Strength & Flexibility</h3><p>Daily practice gradually elongates tight hamstrings, hips, and shoulders while strengthening stabilizing core muscles without joint wear and tear.</p>",
-      "<h3>2. Reduced Anxiety & Nervous System Calmness</h3><p>Mindful movement combined with deep diaphragmatic breathing calms the amygdala, reducing feelings of chronic anxiety and nervousness.</p>",
-      "<h3>3. Superior Sleep Quality</h3><p>Practicing restorative asanas and <a href='/blog/yoga-nidra-deep-relaxation' class='text-primary underline font-medium'>Yoga Nidra</a> before bedtime regulates melatonin production and cures insomnia.</p>",
-      "<h3>4. Improved Posture & Spine Health</h3><p>Strengthening the erector spinae muscles helps maintain a erect, painless posture, neutralizing the ill-effects of sedentary screen work.</p>",
-      "<h3>5. Enhanced Metabolic Rate & Weight Management</h3><p>Dynamic styles like Vinyasa and Power Yoga stimulate thyroid function, boost metabolism, and burn unwanted fat while toning muscle.</p>",
-      "<h3>6. Better Cardiovascular Circulation</h3><p>Yoga improves venous return of blood to the heart and oxygenates cells throughout the peripheral tissues.</p>",
-      "<h3>7. Enhanced Lung Capacity & Respiratory Efficiency</h3><p>Pranayama exercises like Kapalbhati and Anulom Vilom expand tidal lung capacity and clear airways.</p>",
-      "<h3>8. Hormonal & Endocrine Balance</h3><p>Inverted postures stimulate the pituitary and thyroid glands, regulating reproductive and metabolic hormones.</p>",
-      "<h3>9. Pain Relief for Chronic Back & Joint Issues</h3><p>Therapeutic stretching reduces pressure on intervertebral discs and eases arthritis pain.</p>",
-      "<h3>10. Heightened Mind-Body Awareness</h3><p>Daily mindfulness builds deep body awareness, helping you make healthier choices in nutrition and lifestyle.</p>",
-      "Start your daily yoga journey today with our certified teachers at <a href='/' class='text-primary underline font-medium'>Arunayoga Hyderabad</a>."
+      "<p class='text-xl text-gray-600 font-light leading-relaxed mb-6'>Making yoga a daily habit is one of the most empowering choices you can make for your long-term health and longevity. Whether you join early morning <a href='/classes' class='text-primary font-bold hover:underline'>daily yoga classes in Hyderabad</a> or practice mindfully at home, consistency creates incredible transformation.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>1. Enhanced Muscle Strength & Joint Flexibility</h2><p>Daily asana practice elongates tight hamstrings, quadriceps, and shoulders while strengthening deep core muscles without causing joint micro-trauma.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>2. Reduced Anxiety & Nervous System Regulation</h2><p>Combining fluid physical movement with conscious diaphragmatic breathing calms the amygdala, reducing feelings of chronic stress and nervousness.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>3. Superior Sleep Quality & Insomnia Relief</h2><p>Practicing restorative asanas and <a href='/blog/yoga-nidra-deep-relaxation' class='text-primary font-bold hover:underline'>Yoga Nidra</a> before bedtime optimizes melatonin production and relaxes tense muscles for deep, unbroken sleep.</p>",
+      "<blockquote className='my-8 border-l-4 border-primary bg-gray-50 p-6 rounded-r-2xl text-xl italic font-primary text-brand-dark-grey'>“When breath is calm, the mind is calm. Daily practice is the key that unlocks quiet strength and enduring vitality.”</blockquote>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>4. Improved Posture & Vertebral Column Care</h2><p>Targeted backbends and spinal extensions strengthen the erector spinae muscles, counteracting the slouching caused by sitting long hours.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>5. Boosted Metabolic Rate & Natural Weight Management</h2><p>Dynamic flows like Vinyasa and Power Yoga stimulate thyroid secretion, boost metabolic burn, and tone muscles naturally.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>6. Better Cardiovascular & Lymphatic Circulation</h2><p>Inverted postures and rhythmic chest movements improve venous blood return to the heart and facilitate cellular oxygenation.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>7. Enhanced Lung Capacity & Airway Clearance</h2><p>Pranayama exercises such as Kapalbhati and Anulom Vilom clear bronchial passages and expand chest expansion volume.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>8. Endocrine Balance & Hormonal Regulation</h2><p>Inversions stimulate the pituitary and pineal glands, aiding hormonal balance across all life stages.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>9. Natural Relief for Lower Back & Joint Pain</h2><p>Therapeutic spinal stretching relieves intervertebral compression and soothes chronic sciatic and lumbar stiffness.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>10. Deepened Mind-Body Self Awareness</h2><p>Mindful movement cultivates acute bodily intuition, encouraging healthier nutritional and lifestyle choices.</p>",
+      "<p>Begin your daily yoga journey today with master teachers at <a href='/' class='text-primary font-bold hover:underline'>Arunayoga Hyderabad</a>.</p>"
     ],
     faqs: [
       {
@@ -126,16 +129,20 @@ export const blogPosts: BlogPost[] = [
     featuredImageCaption: "Guided meditation techniques bring profound emotional stability and mental stillness.",
     tags: ["Meditation Classes Hyderabad", "Stress Relief", "Mindfulness", "Anxiety Cure"],
     content: [
-      "Chronic stress is often described as the silent epidemic of the 21st century. High-pressure careers, constant digital notifications, and personal obligations keep our nervous system locked in a continuous 'fight-or-flight' state.",
-      "Meditation (Dhyana) is not about forcing your mind to be thoughtless; it is the art of detached awareness. At our <a href='/wellness' class='text-primary underline font-medium'>Meditation Classes in Hyderabad</a>, we guide students through structured, traditional techniques that rewire brain circuitry.",
-      "<h3>The Science Behind Meditation & Brain Plasticity</h3><p>Neuroscience research shows that 8 weeks of regular meditation shrinks the amygdala (the brain's fear and anxiety center) and thickens the prefrontal cortex—the center for executive decision making, emotional control, and focus.</p>",
-      "<h3>Key Meditation Practices Taught at Arunayoga</h3><ul><li><strong>Anapanasati (Breath Awareness):</strong> Observing natural breath movement to anchor scattered thoughts.</li><li><strong>Trataka (Candle Gazing):</strong> Enhancing single-pointed concentration and calming visual sensory fatigue.</li><li><strong>Yoga Nidra (Psychic Sleep):</strong> Guided systemic body scan that induces deep alpha and theta brainwaves.</li></ul>",
-      "If you suffer from sleep issues, anxiety, or mental fatigue, experience our peaceful <a href='/contact' class='text-primary underline font-medium'>meditation sessions in Banjara Hills</a>."
+      "<p class='text-xl text-gray-600 font-light leading-relaxed mb-6'>Chronic mental stress is the hidden epidemic of modern life. Fast-paced careers, endless digital alerts, and constant demands keep our nervous system trapped in a state of high alert.</p>",
+      "<p>Meditation (Dhyana) is not about forcing your mind to be empty; it is the art of detached, loving self-awareness. At our <a href='/wellness' class='text-primary font-bold hover:underline'>Meditation Classes in Hyderabad</a>, we guide students through time-tested traditional techniques that soothe nervous tension.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>The Neuroscience Behind Meditation</h2><p>Brain imaging studies demonstrate that just 8 weeks of regular meditation shrinks the amygdala (the brain's fear and stress center) and thickens the prefrontal cortex—the area responsible for emotional control, focus, and wise decision-making.</p>",
+      "<blockquote className='my-8 border-l-4 border-primary bg-gray-50 p-6 rounded-r-2xl text-xl italic font-primary text-brand-dark-grey'>“You cannot stop the waves of thought, but you can learn how to surf them with grace and equanimity.”</blockquote>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>Core Meditation Techniques Taught at Arunayoga</h2>",
+      "<h3 class='text-xl font-bold font-primary text-primary my-4'>1. Anapanasati (Breath Awareness)</h3><p>Observing the gentle flow of incoming and outgoing breath anchors a hyperactive mind to the present moment.</p>",
+      "<h3 class='text-xl font-bold font-primary text-primary my-4'>2. Trataka (Concentrated Gazing)</h3><p>Fixing gaze on a candle flame calms visual fatigue and enhances single-pointed focus (Dharana).</p>",
+      "<h3 class='text-xl font-bold font-primary text-primary my-4'>3. Yoga Nidra (Yogic Psychic Sleep)</h3><p>A guided systemic body scan that induces deep restorative alpha and theta brainwaves, releasing stored emotional trauma.</p>",
+      "<p>If you experience anxiety, mental burnout, or insomnia, join our peaceful <a href='/contact' class='text-primary font-bold hover:underline'>Meditation Sessions in Banjara Hills, Hyderabad</a>.</p>"
     ],
     faqs: [
       {
         question: "I can't stop my thoughts. Can I still learn meditation?",
-        answer: "Absolutely! Meditation is not about stopping thoughts, but learning how not to react to them. Our instructors guide beginners step-by-step."
+        answer: "Definitely! Meditation is not about stopping thoughts, but learning how not to react to them. Our instructors guide beginners step-by-step."
       }
     ],
     relatedSlugs: [
@@ -163,14 +170,13 @@ export const blogPosts: BlogPost[] = [
     featuredImageCaption: "Choose an accredited institute with authentic lineage and peaceful campus infrastructure.",
     tags: ["Best Yoga Centre in Hyderabad", "Yoga Studio Guide", "Yoga Teacher Training Hyderabad"],
     content: [
-      "Finding the right yoga institute can make the difference between a superficial fitness routine and a life-transforming spiritual journey. With many commercial studios emerging, how do you choose the best yoga centre in Hyderabad?",
-      "Here are the top 7 criteria to look for before enrolling:",
-      "<h3>1. Authenticity & Guru Lineage</h3><p>Verify if the founder and lead teachers come from traditional yoga lineages (such as Parampara). Experienced masters understand how to adapt postures to individual body structures safely.</p>",
-      "<h3>2. Accreditations & Certifications</h3><p>Ensure the institute is certified by international bodies like <a href='/teacher-training' class='text-primary underline font-medium'>Yoga Alliance USA</a>, government bodies like the Ministry of AYUSH, or university affiliations for diploma recognition.</p>",
-      "<h3>3. Personalized Attention & Batch Size</h3><p>Avoid overcrowded classes. Small batch sizes allow instructors to observe alignment and offer corrections.</p>",
-      "<h3>4. Comprehensive Offerings (Classes, Therapy, Training)</h3><p>A true institute offers a spectrum of services—from daily Hatha/Vinyasa classes to specialized <a href='/wellness' class='text-primary underline font-medium'>Therapeutic Yoga</a> and professional Teacher Training.</p>",
-      "<h3>5. Hygiene, Atmosphere & Location</h3><p>Look for a quiet, green sanctuary away from heavy traffic noise. Centres located in serene spots like Banjara Hills provide ideal environments for pranayama and meditation.</p>",
-      "Discover why hundreds of students trust <a href='/about' class='text-primary underline font-medium'>Arunayoga Hyderabad</a> as their preferred yoga destination."
+      "<p class='text-xl text-gray-600 font-light leading-relaxed mb-6'>Selecting the right yoga institute makes the difference between a superficial fitness class and a deeply transformational life journey. With many commercial studios emerging, how do you find the best yoga centre in Hyderabad?</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>1. Lineage & Master Instructor Credentials</h2><p>Verify if the founder and lead trainers come from recognized Guru Paramparas. Experienced masters adapt postures to individual structural needs safely.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>2. Accreditation & Recognized Diplomas</h2><p>Check if the institute is registered with global bodies like <a href='/teacher-training' class='text-primary font-bold hover:underline'>Yoga Alliance USA (RYS)</a> and recognized by university or government health boards.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>3. Small Batch Size & Personal Alignment</h2><p>Avoid overcrowded halls. Small student-to-teacher ratios ensure safety and individual posture corrections.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>4. Comprehensive Programs (Classes, Therapy, Training)</h2><p>A premier institute offers a full spectrum of programs—from daily Hatha/Vinyasa classes to specialized <a href='/wellness' class='text-primary font-bold hover:underline'>Therapeutic Yoga</a> and professional Teacher Training.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>5. Peaceful Studio Environment & Location</h2><p>Look for a quiet, green sanctuary away from heavy traffic pollution. Studios located in calm spaces like Banjara Hills provide an ideal atmosphere for pranayama and meditation.</p>",
+      "<p>Discover why hundreds of students trust <a href='/about' class='text-primary font-bold hover:underline'>Arunayoga Hyderabad</a> as their preferred yoga institute.</p>"
     ],
     faqs: [
       {
@@ -203,10 +209,9 @@ export const blogPosts: BlogPost[] = [
     featuredImageCaption: "Shat Karma methods purify internal systems and prepare the body for deep pranayama.",
     tags: ["Shat Karma", "Yogic Detox", "Cleansing Techniques", "Hatha Yoga"],
     content: [
-      "In traditional Hatha Yoga, Shat Karma is considered an essential prerequisite for advanced pranayama and meditation. These six purification practices clear bodily toxins and balance internal Doshas.",
-      "Neti helps cleanse the nasal passages and supports better breathing. Dhauti and Basti are deeper digestive cleansing methods practiced under expert guidance.",
-      "Nauli strengthens abdominal muscles and digestive fire, while Kapalbhati purifies the respiratory tract. Trataka enhances visual focus and eye health.",
-      "Learn authentic Shat Karma safely under Master guidance at <a href='/teacher-training' class='text-primary underline font-medium'>Arunayoga Teacher Training Hyderabad</a>."
+      "<p class='text-xl text-gray-600 font-light leading-relaxed mb-6'>In classical Hatha Yoga, Shat Karma is the foundation of physical purification. These six internal cleansing practices remove toxic accumulations and balance bodily Doshas before advanced pranayama and dhyana.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>The Six Traditional Shat Karma Practices</h2><ul class='list-disc pl-6 space-y-2 my-4'><li><strong>Neti:</strong> Nasal hygiene using saline water (Jala Neti) or thread (Sutra Neti) to clear sinuses.</li><li><strong>Dhauti:</strong> Digestive tract cleansing methods.</li><li><strong>Nauli:</strong> Abdominal organ churning to ignite digestive fire (Agni).</li><li><strong>Basti:</strong> Lower colon detoxification.</li><li><strong>Kapalbhati:</strong> Skull-shining respiratory purification.</li><li><strong>Trataka:</strong> Steady candle gazing to purify tear ducts and sharpen focus.</li></ul>",
+      "<p>Learn authentic Shat Karma safely under Master guidance in our <a href='/teacher-training' class='text-primary font-bold hover:underline'>Teacher Training Courses at Arunayoga Hyderabad</a>.</p>"
     ],
     relatedSlugs: ["understanding-pranayama-breath-control", "why-yoga-is-important-for-healthy-life"]
   },
@@ -229,9 +234,9 @@ export const blogPosts: BlogPost[] = [
     featuredImageCaption: "Warm herbal oil pouring continuously over the forehead during Shirodhara therapy.",
     tags: ["Shirodhara", "Ayurveda Hyderabad", "Stress Relief Therapy", "Therapeutic Yoga"],
     content: [
-      "Shirodhara is a classical Ayurvedic healing procedure where warm, medicated herbal oil is continuously poured in a steady stream over the forehead.",
-      "This therapy profoundly calms the central nervous system, relieves mental exhaustion, cures chronic headaches, and restores sleep cycles.",
-      "Consult our expert Ayurvedic physicians at <a href='/wellness' class='text-primary underline font-medium'>Arunayoga Wellness Center Hyderabad</a> to book your session."
+      "<p class='text-xl text-gray-600 font-light leading-relaxed mb-6'>Shirodhara is a quintessential Ayurvedic therapy in which warm, medicated herbal oil is poured in a continuous, rhythmic stream over the forehead.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>Proven Therapeutic Benefits</h2><p>This therapy calms the central nervous system, relieves mental fatigue, eases migraine headaches, and restores natural sleep rhythms by balancing Vata Dosha.</p>",
+      "<p>Book an Ayurvedic consultation at <a href='/wellness' class='text-primary font-bold hover:underline'>Arunayoga Wellness Center Hyderabad</a> today.</p>"
     ],
     relatedSlugs: ["ayurvedic-massage-benefits", "how-meditation-reduces-stress-and-anxiety"]
   },
@@ -254,9 +259,9 @@ export const blogPosts: BlogPost[] = [
     featuredImageCaption: "Conscious breath awareness balances the prana channels and calms thoughts.",
     tags: ["Pranayama", "Breathwork", "Energy Regulation", "Yoga Classes"],
     content: [
-      "Pranayama goes far beyond basic breathing exercises. It is the conscious regulation of Prana (vital life-force energy) through breath movement, retention (Kumbhaka), and mudras.",
-      "Practicing Nadi Shodhana (Alternate Nostril Breathing) and Bhramari (Humming Bee Breath) balances hemisphere brain activity and lowers heart rate.",
-      "Join our daily <a href='/classes' class='text-primary underline font-medium'>pranayama and yoga classes in Hyderabad</a>."
+      "<p class='text-xl text-gray-600 font-light leading-relaxed mb-6'>Pranayama is far more than breathing exercises—it is the conscious regulation of Prana (vital life force) through breath control, retention, and mudras.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>Key Pranayama Practices</h2><p>Practicing Nadi Shodhana (Alternate Nostril Breathing) and Bhramari (Humming Bee Breath) balances brain hemisphere activity and stabilizes heart rate.</p>",
+      "<p>Join daily <a href='/classes' class='text-primary font-bold hover:underline'>Pranayama and Yoga Classes in Hyderabad</a>.</p>"
     ],
     relatedSlugs: ["how-meditation-reduces-stress-and-anxiety", "10-benefits-of-daily-yoga-practice"]
   },
@@ -279,8 +284,9 @@ export const blogPosts: BlogPost[] = [
     featuredImageCaption: "Understanding Patanjali's Yoga Sutras unlocks the spiritual essence of yoga.",
     tags: ["Yoga Sutras", "Patanjali", "Yoga Philosophy", "Ashtanga Yoga"],
     content: [
-      "The Yoga Sutras of Patanjali are the cornerstone text of classical yoga philosophy, outlining the 8-limbed path (Ashtanga Yoga) to spiritual liberation and mental mastery.",
-      "Learn deep scriptural philosophy in our <a href='/teacher-training' class='text-primary underline font-medium'>Yoga Alliance Teacher Training Courses in Hyderabad</a>."
+      "<p class='text-xl text-gray-600 font-light leading-relaxed mb-6'>The Yoga Sutras of Patanjali are the foundational guide to classical yoga philosophy, presenting the 8-limbed path (Ashtanga Yoga) for mental mastery and liberation.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>The Eight Limbs of Yoga</h2><p>Yama, Niyama, Asana, Pranayama, Pratyahara, Dharana, Dhyana, and Samadhi form a unified discipline for spiritual growth.</p>",
+      "<p>Explore deep yogic wisdom in our <a href='/teacher-training' class='text-primary font-bold hover:underline'>Yoga Teacher Training Programs in Hyderabad</a>.</p>"
     ],
     relatedSlugs: ["why-yoga-is-important-for-healthy-life", "shat-karma-cleansing-techniques"]
   },
@@ -303,8 +309,9 @@ export const blogPosts: BlogPost[] = [
     featuredImageCaption: "30 minutes of Yoga Nidra gives the restorative benefit of 3 hours of deep sleep.",
     tags: ["Yoga Nidra", "Deep Relaxation", "Stress Relief", "Sleep Better"],
     content: [
-      "Yoga Nidra, or conscious yogic sleep, allows the physical body to reach profound rest while brainwave activity shifts into deep restorative delta states.",
-      "Join guided sessions at <a href='/classes' class='text-primary underline font-medium'>Arunayoga Studio Hyderabad</a>."
+      "<p class='text-xl text-gray-600 font-light leading-relaxed mb-6'>Yoga Nidra, or conscious yogic sleep, guides the body into profound physical relaxation while maintaining quiet mental awareness.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>Restorative Benefits</h2><p>Just 30 minutes of guided Yoga Nidra offers the deep cellular restoration equivalent to several hours of deep sleep.</p>",
+      "<p>Join guided sessions at <a href='/classes' class='text-primary font-bold hover:underline'>Arunayoga Studio Hyderabad</a>.</p>"
     ],
     relatedSlugs: ["how-meditation-reduces-stress-and-anxiety", "10-benefits-of-daily-yoga-practice"]
   },
@@ -327,8 +334,9 @@ export const blogPosts: BlogPost[] = [
     featuredImageCaption: "Herbal oil massage detoxicates tissues and releases muscle tension.",
     tags: ["Ayurvedic Massage", "Abhyanga", "Detox Therapy", "Naturopathy Hyderabad"],
     content: [
-      "Traditional Ayurvedic Abhyanga massage uses warm organic herbal oils customized to your Dosha to flush lymphatic waste, ease stiff joints, and revitalize skin.",
-      "Explore complete natural healing options at <a href='/wellness' class='text-primary underline font-medium'>Arunayoga Wellness Center Hyderabad</a>."
+      "<p class='text-xl text-gray-600 font-light leading-relaxed mb-6'>Ayurvedic Abhyanga massage utilizes warm, medicated herbal oils to improve tissue circulation, relieve muscle fatigue, and detoxify organs.</p>",
+      "<h2 class='text-2xl font-bold font-primary text-brand-dark-grey border-l-4 border-primary pl-4 py-1 my-6'>Key Rejuvenation Benefits</h2><p>Reduces joint stiffness, improves skin tone, lowers blood pressure, and calms the nervous system.</p>",
+      "<p>Book an Ayurvedic massage at <a href='/wellness' class='text-primary font-bold hover:underline'>Arunayoga Wellness Center Hyderabad</a>.</p>"
     ],
     relatedSlugs: ["benefits-of-shirodhara-therapy", "why-yoga-is-important-for-healthy-life"]
   }
