@@ -40,7 +40,7 @@ export default function BlogList({ limit, showHeader = true }: BlogListProps) {
                             <div className="h-48 relative overflow-hidden">
                                 <Image
                                     src={post.image}
-                                    alt={post.title}
+                                    alt={post.featuredImageAlt || post.title}
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
@@ -56,7 +56,7 @@ export default function BlogList({ limit, showHeader = true }: BlogListProps) {
                                 </div>
 
                                 <h3 className="text-xl font-bold font-primary text-gray-900 mb-3 group-hover:text-primary transition-colors line-clamp-2">
-                                    <Link href={`/blog/${post.id}`}>{post.title}</Link>
+                                    <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                                 </h3>
 
                                 <p className="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3">
@@ -64,7 +64,7 @@ export default function BlogList({ limit, showHeader = true }: BlogListProps) {
                                 </p>
 
                                 <div className="mt-auto">
-                                    <Link href={`/blog/${post.id}`}>
+                                    <Link href={`/blog/${post.slug}`}>
                                         <span className="inline-flex items-center text-sm font-bold text-primary hover:text-secondary transition-colors">
                                             Read Article <ArrowRight className="w-4 h-4 ml-1" />
                                         </span>
